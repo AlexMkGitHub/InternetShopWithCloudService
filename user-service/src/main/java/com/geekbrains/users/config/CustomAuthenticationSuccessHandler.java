@@ -1,11 +1,11 @@
-package com.geekbrains.geekmarketwinter.config;
+package com.geekbrains.users.config;
 
-import com.geekbrains.geekmarketwinter.entities.User;
+import com.geekbrains.users.services.UserService;
+import contract.entities.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.stereotype.Component;
-import com.geekbrains.geekmarketwinter.services.UserService;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

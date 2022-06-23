@@ -1,13 +1,12 @@
 package com.geekbrains.geekmarketwinter.controllers;
 
-import com.geekbrains.geekmarketwinter.entities.Order;
+import contract.entities.Order;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.Objects;
 
 @Controller
 @RequestMapping("/paypal/buy")

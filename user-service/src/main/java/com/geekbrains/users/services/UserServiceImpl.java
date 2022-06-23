@@ -1,8 +1,10 @@
-package com.geekbrains.geekmarketwinter.services;
+package com.geekbrains.users.services;
 
-import com.geekbrains.geekmarketwinter.entities.Role;
-import com.geekbrains.geekmarketwinter.entities.SystemUser;
-import com.geekbrains.geekmarketwinter.entities.User;
+import com.geekbrains.users.repositories.RoleRepository;
+import com.geekbrains.users.repositories.UserRepository;
+import contract.entities.Role;
+import contract.entities.SystemUser;
+import contract.entities.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -11,8 +13,6 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import com.geekbrains.geekmarketwinter.repositories.RoleRepository;
-import com.geekbrains.geekmarketwinter.repositories.UserRepository;
 
 import java.util.Arrays;
 import java.util.Collection;

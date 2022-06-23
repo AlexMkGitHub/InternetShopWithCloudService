@@ -1,11 +1,9 @@
 package com.geekbrains.geekmarketwinter.controllers;
 
-import com.geekbrains.geekmarketwinter.entities.DeliveryAddress;
-import com.geekbrains.geekmarketwinter.entities.Order;
-import com.geekbrains.geekmarketwinter.entities.OrderItem;
-import com.geekbrains.geekmarketwinter.entities.User;
+import contract.entities.DeliveryAddress;
+import contract.entities.Order;
+import contract.entities.User;
 import com.geekbrains.geekmarketwinter.services.*;
-import com.geekbrains.geekmarketwinter.utils.ShoppingCart;
 import contract.entities.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -16,7 +14,6 @@ import org.springframework.web.bind.annotation.*;
 import contract.specifications.ProductSpecs;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import java.security.Principal;
 import java.time.LocalDateTime;
 import java.util.List;

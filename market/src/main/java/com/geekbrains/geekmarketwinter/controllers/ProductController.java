@@ -4,8 +4,6 @@ import com.geekbrains.geekmarketwinter.services.CategoryService;
 import com.geekbrains.geekmarketwinter.services.ImageSaverService;
 import contract.entities.Product;
 import contract.entities.ProductDTO;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,8 +17,7 @@ import javax.validation.Valid;
 @Controller
 @RequestMapping("/products")
 public class ProductController {
-    private final Logger logger = LoggerFactory.getLogger(AdminController.class);
-    
+
     @Autowired
     private ProductService productService;
     
@@ -43,7 +40,6 @@ public class ProductController {
                                     BindingResult theBindingResult,
                                     @RequestParam("file") MultipartFile file) {
         String newProductTitle = newProduct.getTitle();
-        logger.debug("Processing addProduct form for: " + newProductTitle);
         if (theBindingResult.hasErrors()) {
             return "add-product-form";
         }
@@ -51,7 +47,6 @@ public class ProductController {
         if(existing != null) {
             model.addAttribute("newProduct", newProduct);
             model.addAttribute("addProductError", "Product with current title already exists.");
-            logger.debug("Product with current title already exists.");
             return "add-product-form";
         }
 
@@ -63,7 +58,6 @@ public class ProductController {
         model.addAttribute("addProductSuccess", "Product successfully added");
         model.addAttribute("newProduct", new ProductDTO());
         model.addAttribute("categories", categoryService.getAllCategories());
-        logger.info("Successfully added product: " + newProductTitle);
         return "add-product-form";
     }
 

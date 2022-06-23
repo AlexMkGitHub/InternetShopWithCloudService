@@ -1,12 +1,10 @@
-package com.geekbrains.geekmarketwinter.services;
+package com.geekbrains.users.services;
 
-import com.geekbrains.geekmarketwinter.entities.DeliveryAddress;
-import com.geekbrains.geekmarketwinter.entities.User;
-import com.geekbrains.geekmarketwinter.repositories.DeliveryAddressRepository;
+import com.geekbrains.users.repositories.DeliveryAddressRepository;
+import contract.entities.DeliveryAddress;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service

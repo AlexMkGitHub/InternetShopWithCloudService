@@ -1,4 +1,4 @@
-package com.geekbrains.geekmarketwinter.entities;
+package contract.entities;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;

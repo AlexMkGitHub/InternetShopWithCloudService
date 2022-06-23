@@ -1,4 +1,4 @@
-package com.geekbrains.geekmarketwinter.controllers;
+package com.geekbrains.users.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

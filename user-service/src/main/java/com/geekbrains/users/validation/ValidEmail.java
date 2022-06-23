@@ -1,4 +1,4 @@
-package com.geekbrains.geekmarketwinter.validation;
+package com.geekbrains.users.validation;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

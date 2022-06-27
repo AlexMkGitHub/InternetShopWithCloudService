@@ -1,7 +1,7 @@
-package com.geekbrains.geekmarketwinter.services;
+package com.geekbrains.users.services;
 
-import com.geekbrains.geekmarketwinter.entities.SystemUser;
-import com.geekbrains.geekmarketwinter.entities.User;
+import contract.entities.SystemUser;
+import contract.entities.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
 public interface UserService extends UserDetailsService {
